@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: url('https://assets.nflxext.com/ffe/siteui/vlv3/9d3533b2-0e2b-40b2-95e0-ecd7979cc88b/a3873901-5b7c-46eb-b9fa-12fea5197bd3/IN-en-20240311-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        .bg-black-transparent {
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+        .netflix-red {
+            color: #e50914;
+        }
+        .bg-netflix-red {
+            background-color: #e50914;
+        }
+        .input-bg {
+            background-color: #333;
+            border-radius: 4px;
+        }
+        .footer {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="px-4 py-4 md:px-16">
+            <div class="flex justify-between items-center">
+                <div class="netflix-red text-4xl font-bold">NETFLIX</div>
+                <div>
+                    <button class="bg-netflix-red text-white px-4 py-1 rounded">Sign In</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow flex items-center justify-center px-4">
+            <div class="bg-black-transparent w-full max-w-md rounded-lg p-16">
+                <h1 class="text-3xl font-bold mb-6">Sign In</h1>
+                
+                <form class="space-y-6">
+                    <div>
+                        <input 
+                            type="email" 
+                            placeholder="Email or phone number" 
+                            class="w-full input-bg p-3 text-white focus:outline-none"
+                            required
+                        >
+                    </div>
+                    
+                    <div>
+                        <input 
+                            type="password" 
+                            placeholder="Password" 
+                            class="w-full input-bg p-3 text-white focus:outline-none"
+                            required
+                        >
+                    </div>
+                    
+                    <button 
+                        type="submit" 
+                        class="w-full bg-netflix-red text-white py-3 rounded font-semibold hover:bg-red-700 transition"
+                    >
+                        Sign In
+                    </button>
+                    
+                    <div class="flex justify-between items-center text-gray-400">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="remember" class="mr-2">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#" class="hover:underline">Need help?</a>
+                    </div>
+                </form>
+                
+                <div class="mt-8 text-gray-400">
+                    <p>New to Netflix? <a href="#" class="text-white hover:underline">Sign up now</a>.</p>
+                    <p class="text-sm mt-2">
+                        This page is protected by Google reCAPTCHA to ensure you're not a bot. 
+                        <a href="#" class="text-blue-500 hover:underline">Learn more</a>.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer py-8 px-4 md:px-16 mt-auto">
+            <div class="max-w-6xl mx-auto">
+                <div class="mb-6">
+                    <p>Questions? Call 1-844-505-2993</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                    <div>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a href="#" class="hover:underline">FAQ</a></li>
+                            <li><a href="#" class="hover:underline">Investor Relations</a></li>
+                            <li><a href="#" class="hover:underline">Privacy</a></li>
+                            <li><a href="#" class="hover:underline">Speed Test</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a href="#" class="hover:underline">Help Center</a></li>
+                            <li><a href="#" class="hover:underline">Jobs</a></li>
+                            <li><a href="#" class="hover:underline">Cookie Preferences</a></li>
+                            <li><a href="#" class="hover:underline">Legal Notices</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a href="#" class="hover:underline">Account</a></li>
+                            <li><a href="#" class="hover:underline">Ways to Watch</a></li>
+                            <li><a href="#" class="hover:underline">Corporate Information</a></li>
+                            <li><a href="#" class="hover:underline">Only on Netflix</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a href="#" class="hover:underline">Media Center</a></li>
+                            <li><a href="#" class="hover:underline">Terms of Use</a></li>
+                            <li><a href="#" class="hover:underline">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="text-sm text-gray-400">
+                    <p>© 2024 Netflix Clone by @yuzuhisa</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
